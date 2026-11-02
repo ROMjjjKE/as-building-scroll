@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Строительство частных домов под ключ в Минске и Беларуси | AS-Building</title>
 <meta name="description" content="Подберем участок. Построим дом. Строительство домов под ключ по всей Беларуси: проект, фундамент, коробка, отделка.">
-<link rel="preload" as="image" href="frames/001.webp" media="(min-width:821px)">
-<link rel="preload" as="image" href="frames-m/001.webp" media="(max-width:820px)">
+<link rel="preload" as="image" href="frames-space/001.webp" media="(min-width:821px)">
+<link rel="preload" as="image" href="frames-space-m/001.webp" media="(max-width:820px)">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -27,42 +27,50 @@
 </header>
 
 <main>
-<section class="scroller" id="scroller" aria-label="Как мы строим дом">
+<section class="scroller" id="scroller" aria-label="От орбиты до готового дома">
   <div class="stage">
     <canvas id="cv" aria-hidden="true"></canvas>
     <div class="shade" aria-hidden="true"></div>
 
-    <!-- сетка-чертёж поверх кадра -->
     <div class="grid" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
 
-    <!-- счётчик этапов -->
     <aside class="hud" aria-hidden="true">
-      <div class="hud-num"><span id="hudNum">01</span><em>/05</em></div>
+      <div class="hud-num"><span id="hudNum">01</span><em>/06</em></div>
       <div class="hud-bar"><b id="hudBar"></b></div>
-      <div class="hud-name" id="hudName">Участок</div>
+      <div class="hud-name" id="hudName">Орбита</div>
     </aside>
 
-    <!-- текстовые сцены -->
     <div class="scenes">
 
-      <article class="scene s0" data-from="0" data-to="0.19" data-side="l">
+      <!-- космос: вход -->
+      <article class="scene s0" data-from="0" data-to="0.13" data-side="l">
         <p class="kicker"><span class="tick"></span>AS-Building · Беларусь</p>
         <h1><span class="ln"><i>Подберем</i> <i>участок.</i></span><span class="ln"><i>Построим</i> <i>дом.</i></span></h1>
         <p class="lead">Строительство домов под ключ. Бесплатная консультация и готовое предложение с ценами от профессионалов.</p>
         <a class="btn" href="https://as-building.by/kontakty/">Заказать консультацию</a>
-        <div class="scrollhint" aria-hidden="true"><span></span>Листайте вниз, дом строится вместе со скроллом</div>
+        <div class="scrollhint" aria-hidden="true"><span></span>Листайте: камера сходит с орбиты</div>
       </article>
 
-      <article class="scene s1" data-from="0.17" data-to="0.40" data-side="r">
-        <p class="stage-tag"><b>01</b> Земля</p>
+      <!-- космос: снижение -->
+      <article class="scene s1" data-from="0.15" data-to="0.37" data-side="r">
+        <p class="stage-tag"><b>01</b> Снижение</p>
+        <h2>Дом начинается<br>с пустого поля</h2>
+        <p>Пятнадцать секунд скролла здесь — это сезон работы на площадке. Дальше на кадре появится всё, что обычно скрыто за забором стройки.</p>
+        <svg class="callout" viewBox="0 0 260 120" aria-hidden="true"><path d="M2 118 L120 118 L258 6"/><circle cx="258" cy="6" r="4"/></svg>
+      </article>
+
+      <!-- стройка: участок -->
+      <article class="scene s2" data-from="0.44" data-to="0.57" data-side="l">
+        <p class="stage-tag"><b>02</b> Участок</p>
         <h2>Выбрали дом,<br>а участка нет?</h2>
         <p>Подберем идеальный вариант: проверим документы, рельеф, коммуникации и подъезд ещё до покупки.</p>
         <a class="link" href="https://as-building.by/podbor-zemelnyh-uchastkov/">Помощь с выбором участка</a>
         <svg class="callout" viewBox="0 0 260 120" aria-hidden="true"><path d="M2 118 L120 118 L258 6"/><circle cx="258" cy="6" r="4"/></svg>
       </article>
 
-      <article class="scene s2" data-from="0.38" data-to="0.62" data-side="l">
-        <p class="stage-tag"><b>02</b> Фундамент и коробка</p>
+      <!-- стройка: фундамент -->
+      <article class="scene s3" data-from="0.56" data-to="0.70" data-side="r">
+        <p class="stage-tag"><b>03</b> Фундамент и коробка</p>
         <h2>Берём проект<br>с нуля</h2>
         <ul class="facts">
           <li><b>Свайный, ленточный, плитный</b>фундамент под ваш грунт</li>
@@ -72,16 +80,18 @@
         <svg class="callout" viewBox="0 0 260 120" aria-hidden="true"><path d="M258 118 L140 118 L2 6"/><circle cx="2" cy="6" r="4"/></svg>
       </article>
 
-      <article class="scene s3" data-from="0.60" data-to="0.82" data-side="r">
-        <p class="stage-tag"><b>03</b> Кровля и отделка</p>
+      <!-- стройка: кровля -->
+      <article class="scene s4" data-from="0.69" data-to="0.84" data-side="l">
+        <p class="stage-tag"><b>04</b> Кровля и отделка</p>
         <h2>Закрываем контур<br>и доводим до жилого</h2>
         <p>Крыша, окна, фасад, инженерные системы. Без цепочки подрядчиков: за все работы отвечает одна команда.</p>
         <a class="link" href="https://as-building.by/projekti/">Смотреть построенные дома</a>
         <svg class="callout" viewBox="0 0 260 120" aria-hidden="true"><path d="M2 118 L120 118 L258 6"/><circle cx="258" cy="6" r="4"/></svg>
       </article>
 
-      <article class="scene s4" data-from="0.80" data-to="1.01" data-side="c">
-        <p class="stage-tag"><b>04</b> Ключи в руках</p>
+      <!-- стройка: финал -->
+      <article class="scene s5" data-from="0.83" data-to="1.01" data-side="c">
+        <p class="stage-tag"><b>05</b> Ключи в руках</p>
         <h2>Полный комплекс услуг</h2>
         <p class="lead">Комплексный подход: берём проект с нуля и выполняем все работы под ключ.</p>
         <div class="cta-row">

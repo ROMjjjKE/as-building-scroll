@@ -30,7 +30,7 @@ img{display:block;max-width:100%}
 .tel{font-size:15px;letter-spacing:.04em;white-space:nowrap;padding-left:24px;border-left:1px solid var(--line)}
 
 /* ---------- сцена ---------- */
-.scroller{position:relative;height:860vh}
+.scroller{position:relative;height:1250vh}
 .stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;background:#0a0b0c}
 #cv{position:absolute;inset:0;width:100%;height:100%;display:block}
 .shade{position:absolute;inset:0;pointer-events:none;
@@ -137,7 +137,7 @@ h2{font-size:clamp(30px,4.2vw,66px);margin-bottom:22px}
   .nav,.tel{display:none}
   .top{padding:12px var(--pad)}
   .logo img{height:36px}
-  .scroller{height:760vh}
+  .scroller{height:1080vh}
   .shade,.stage[data-side="r"] .shade,.stage[data-side="c"] .shade{
     background:linear-gradient(0deg,rgba(6,8,10,.88) 0%,rgba(6,8,10,.5) 46%,rgba(6,8,10,.08) 72%),linear-gradient(180deg,rgba(6,8,10,.5),rgba(6,8,10,0) 18%)}
   .grid i:nth-child(2),.grid i:nth-child(3){display:none}
